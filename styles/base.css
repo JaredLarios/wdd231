@@ -149,3 +149,23 @@ main {
 .card img {
     width: 100%;
 }
+.card-body {
+    padding: 1rem 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary);
+    grid-column: 1/4;
+    text-align: center;
+
+    padding: 1rem;
+    border-radius: 8px 8px 0 0;
+
+}
+footer span {
+    color: var(--header-color);
+}
+#lastModified {
+    font-size: 0.8rem;
+}
