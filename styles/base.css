@@ -9,6 +9,7 @@
     --header-color: white;
     --text-color: #241f31;
     --active: yellow;
+    --completed: #009255c5;
 }
 
 /* General */
@@ -138,7 +139,7 @@ main {
     flex-direction: column;
     border: solid 1px var(--primary);
     border-radius: 5px;
-    margin: 0 5px;
+    margin: 5px;
 }
 .card-header {
     text-align: center;
@@ -146,11 +147,45 @@ main {
     background-color: var(--primary);
     padding: 8px 0 8px 0;
 }
+.card-header h3 {
+    color: var(--white);
+}
 .card img {
     width: 100%;
 }
 .card-body {
     padding: 1rem 2rem;
+}
+
+/* Course Card */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+.buttons button {
+    width: 35%;
+    padding: 0.3rem;
+    border-radius: 5px;
+    background-color: var(--primary);
+    border: 1px solidd var(--secondary);
+    color: var(--white);
+}
+
+#course > div {
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#course > div.completed {
+    background-color: var(--completed);
+    border: 1px solid var(--completed);
+}
+#course > div.completed h3 {
+    color: var(--white);
 }
 
 /* Footer */
