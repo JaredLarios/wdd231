@@ -168,7 +168,7 @@ main {
     padding: 0.3rem;
     border-radius: 5px;
     background-color: var(--primary);
-    border: 1px solidd var(--secondary);
+    border: 1px solid var(--secondary);
     color: var(--white);
 }
 
