@@ -1,6 +1,9 @@
 // Get DOM Elements
 const listCourse = document.querySelector('#course');
 const allButton = document.querySelector('#all');
+const cseButton = document.querySelector('#cse');
+const wddButton = document.querySelector('#wdd');
+
 
 // My Courses
 const courses = [
@@ -85,7 +88,19 @@ const courses = [
 
 craeteCourseCard(courses);
 
-// TODO: Create a filter for each button that is on the card with its filter and change bg for completed courses
+// Event Listener
+allButton.addEventListener('click', ()=> {
+    craeteCourseCard(courses);
+})
+cseButton.addEventListener('click', ()=> {
+    let filterCourse = courses.filter(course => course.subject === 'CSE');
+    craeteCourseCard(filterCourse);
+})
+wddButton.addEventListener('click', ()=> {
+    let filterCourse = courses.filter(course => course.subject === 'WDD');
+    craeteCourseCard(filterCourse);
+})
+
 
 // Creating Cards
 function craeteCourseCard(filterCourse) {
@@ -96,7 +111,7 @@ function craeteCourseCard(filterCourse) {
         console.log(course)
 
         name.textContent = course.subject + ' ' + course.number;
-        card.setAttribute("class", `${course.completed? "completed": "notCompleted"}`);
+        card.setAttribute("class", `${course.completed? "completed": ""}`);
 
         card.appendChild(name);
         listCourse.appendChild(card);
