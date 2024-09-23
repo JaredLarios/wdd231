@@ -1,0 +1,23 @@
+{
+    "family_name": "Larios",
+    "moved_date": "01-01-2000",
+    "no_memebers": 3,
+    "visited_by_bishop": false,
+    "members": [
+        {
+            "name": "Jared",
+            "gender": "Male",
+            "birthdate": "12-12-1999"
+        },
+        {
+            "name": "Kate",
+            "gender": "Female",
+            "birthdate": "13-08-1997"
+        },
+        {
+            "name": "Peter",
+            "gender": "Male",
+            "birthdate": "01-01-2008"
+        }
+    ]
+}
