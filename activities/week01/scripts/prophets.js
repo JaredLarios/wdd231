@@ -1,17 +1,7 @@
 /* --- API Cards Information ----*/
 const URL = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
 const cards = document.querySelector('#cards');
-/*
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);  // temporary checking for valid response and data parsing
-    const prophets = jsonObject['prophets'];
-    prophets.forEach(displayProphets);
-  });
-*/
+
 // Get Prophets Data
 async function getProphetData() {
     const response = await fetch(URL);
