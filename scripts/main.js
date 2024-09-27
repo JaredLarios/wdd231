@@ -1,6 +1,6 @@
 // Get DOM Elements
-const currentYear = document.querySelector("#currentyear")
-const lastModified = document.querySelector("#lastModified")
+const currentYear = document.querySelector("#currentyear");
+const lastModified = document.querySelector("#lastModified");
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('nav');
 
