@@ -1,7 +1,7 @@
 [
     {
         "name": "Cementos Progreso",
-        "adress": "Progreso, Guatemala",
+        "address": "Progreso, Guatemala",
         "phone": 23389100 ,
         "url": "https://www.cempro.com/",
         "email": "comunicacion@progreso.com",
@@ -13,7 +13,7 @@
     },
     {
         "name": "Claro",
-        "adress": "Guatemala City, Guatemala",
+        "address": "Guatemala City, Guatemala",
         "phone": 55147100,
         "url": "https://www.claro.com.gt/",
         "email": "info@claro.com.gt",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Tigo",
-        "adress": "Guatemala City, Guatemala",
+        "address": "Guatemala City, Guatemala",
         "phone": 24280000,
         "url": "https://www.tigo.com.gt/",
         "email": "info@tigo.com.gt",
@@ -37,7 +37,7 @@
     },
     {
         "name": "CMI",
-        "adress": "Guatemala City, Guatemala",
+        "address": "Guatemala City, Guatemala",
         "phone": 89084324,
         "url": "https://somoscmi.com/es/",
         "email": "info@cmi.com",
@@ -49,7 +49,7 @@
     },
     {
         "name": "Cemaco",
-        "adress": "Guatemala City, Guatemala",
+        "address": "Guatemala City, Guatemala",
         "phone": 24999990,
         "url": "https://www.cemaco.com/",
         "email": "puntosprivilegio@cemaco.com",
@@ -61,7 +61,7 @@
     },
     {
         "name": "Cana Real",
-        "adress": "Izabal, Guatemala City",
+        "address": "Izabal, Guatemala City",
         "phone": 24751355,
         "url": "https://www.canareal.com.gt",
         "email": "info@canareal.com.gt",
@@ -73,7 +73,7 @@
     },
     {
         "name": "Distribuidora Alvarado",
-        "adress": "Guatemala City, Guatemala",
+        "address": "Guatemala City, Guatemala",
         "phone": 55164839,
         "url": "https://www.distribuidoraalvaradogt.com/",
         "email": "info@distribuidoraalvaradogt.com",
@@ -85,7 +85,7 @@
     },
     {
         "name": "Maya Excelsior",
-        "adress": "Guatemala City, Guatemala",
+        "address": "Guatemala City, Guatemala",
         "phone": 22518371,
         "url": "https://www.mayaexcelsior.com",
         "email": "info@mayaexcelsior.com",
@@ -97,7 +97,7 @@
     },
     {
         "name": "Hospedaje el Quijote",
-        "adress": "Guatemala City, Guatemala",
+        "address": "Guatemala City, Guatemala",
         "phone": 22514680,
         "url": "https://www.hospedajeelquijote.com",
         "email": "info@elquijote.com",
@@ -109,7 +109,7 @@
     },
     {
         "name": "Transportes De Agua En Cisterna San Miguel",
-        "adress": "Guatemala City, Guatemala",
+        "address": "Guatemala City, Guatemala",
         "phone": 34153434,
         "url": "https://transportesanmiguel.com",
         "email": "info@transportesanmiguel.com",
@@ -121,7 +121,7 @@
     },
     {
         "name": "Zetrak Guatemala, S.A.",
-        "adress": "Santa Catarina Puninula, Guatemala",
+        "address": "Santa Catarina Puninula, Guatemala",
         "phone": 66101000,
         "url": "https://www.zetrakgt.com",
         "email": "info@zetrakgt.com",
@@ -133,7 +133,7 @@
     },
     {
         "name": "Car Vital",
-        "adress": "Mixco, Guatemala",
+        "address": "Mixco, Guatemala",
         "phone": 23832000,
         "url": "https://www.vital.com.gt",
         "email": "info@vital.com.gt",
@@ -145,7 +145,7 @@
     },
     {
         "name": "Lh Industrias",
-        "adress": "Guatemala City, Guatemala",
+        "address": "Guatemala City, Guatemala",
         "phone": 22204646,
         "url": "https://www.lhindustrias.com",
         "email": "info@lhindustrias.com",
