@@ -1,0 +1,93 @@
+:root {
+    --main-color: white;
+    --second-color: white;
+    --third-color: white;
+    --shadow-box: #bebebe;
+    --light-box: #ffffff;
+    --bg-color: white;
+
+    --txt-dark-color: #1f1f1f;
+    --txt-light-color: white;
+
+
+    --menu-hover: #00a740;
+    --menu-option: #80db6e;
+    --card-color: #deddda;
+
+
+    --test1: red;
+    --test2: green;
+    --test3: yellow;
+}
+
+
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* Header */
+header {
+    background-color: var(--test1);
+    display: flex;
+    justify-content: center;
+
+    border-radius: 0 0 30px 30px;
+    background: var(--bg-color);
+    box-shadow:  20px 20px 60px var(--shadow-box),
+             -20px -20px 60px var(--light-box);
+}
+
+header .header {
+    max-width: 550px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+header .logo {
+    display: flex;
+}
+header .logo img {
+    width: 50px;
+    height: 50px;
+    border: solid blue 3px;
+    border-radius: 50%;
+}
+
+/* Ham Menu */
+nav {
+    display: none;
+}
+
+nav .menu {
+    padding: 10px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+nav .menu li {
+    padding: 0.5rem;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: var(--txt-dark-color);
+}
+
+nav .menu li:hover {
+    background-color: var(--menu-hover);
+    border-radius: 15px;
+    color: var(--txt-light-color);
+    transition: ease-in-out 0.5s;
+    a {
+        color: var(--txt-light-color);
+    }
+}
