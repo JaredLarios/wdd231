@@ -45,7 +45,14 @@ function createMemeberCard(filterMemebers,) {
         let card = document.createElement('div');
         let headerCard = document.createElement('div');
         let bodyCard = document.createElement('div');
+        let bodyContainer = document.createElement('div');
         let footerCard = document.createElement('div');
+
+        // classes
+        card.setAttribute('class','card');
+        headerCard.setAttribute('class','card-header');
+        bodyCard.setAttribute('class','card-body');
+        footerCard.setAttribute('class','card-footer');
 
         // header
         // new elements
@@ -53,14 +60,15 @@ function createMemeberCard(filterMemebers,) {
         let icon = document.createElement('span');
         let memeberP = document.createElement('p');
 
+
         h3.textContent = member.name;
         memeberP.textContent = membership[member.membership -1];
         icon.setAttribute('css', `${member.iso_certify? 'cert': ''}`)
 
         // add to dom
         headerCard.appendChild(h3);
-        headerCard.appendChild(memeberP);
         headerCard.appendChild(icon);
+        headerCard.appendChild(memeberP);
 
         
         // body
@@ -68,31 +76,32 @@ function createMemeberCard(filterMemebers,) {
         let logo = document.createElement('img');
         let address = document.createElement('p');
         let email = document.createElement('p');
+        let website = document.createElement('p');
+        let phone = document.createElement('p');
 
         // logo.setAttribute('src', `../images/${member.file_name}`)
         logo.setAttribute('src', `https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg`)
         logo.setAttribute('width', `250`)
         address.textContent = member.address
         email.textContent = member.email
+        website.innerHTML = `<a href='${member.url}'>${member.url}</a>`;
+        phone.textContent = member.phone;
         
         // add to dom
         bodyCard.appendChild(logo);
-        bodyCard.appendChild(address);
-        bodyCard.appendChild(email);
-        
+        bodyContainer.appendChild(address);
+        bodyContainer.appendChild(email);
+        bodyContainer.appendChild(website);
+        bodyContainer.appendChild(phone);
+        bodyCard.appendChild(bodyContainer);
+
         // footer
         // new elements
-        let website = document.createElement('p');
-        let phone = document.createElement('p');
         let fund_year = document.createElement('p');
 
-        website.innerHTML = `<a href='${member.url}'>${member.url}</a>`;
-        phone.textContent = member.phone;
         fund_year.textContent = `since ${member.fund_year}`;
 
         // add to dom
-        footerCard.appendChild(website);
-        footerCard.appendChild(phone);
         footerCard.appendChild(fund_year);
 
 

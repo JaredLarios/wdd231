@@ -10,9 +10,9 @@
     --txt-light-color: white;
 
 
-    --menu-hover: #00a740;
-    --menu-option: #80db6e;
-    --card-color: #deddda;
+    --menu-hover: #24b4fb;
+
+    --card-color: #dee0e0;
 
 
     --test1: red;
@@ -25,6 +25,18 @@
 * {
     padding: 0;
     margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+p, a {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 body {
@@ -49,6 +61,11 @@ header .header {
     padding: 0.5rem 1rem;
 }
 
+header .main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 header .logo {
     display: flex;
 }
@@ -60,16 +77,38 @@ header .logo img {
 }
 
 /* Ham Menu */
+
+#ham {
+    font-size: 1.8rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#ham::before {
+	content: "☰";
+}
+
+#ham.open::before {
+	content: "❎";
+}
+
 nav {
-    display: none;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+    gap: 5px;
 }
 
 nav .menu {
-    padding: 10px 0;
+    overflow: hidden;
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
     text-align: center;
 }
 
@@ -86,8 +125,101 @@ nav .menu li:hover {
     background-color: var(--menu-hover);
     border-radius: 15px;
     color: var(--txt-light-color);
-    transition: ease-in-out 0.5s;
-    a {
+    transition: ease-in-out 0.3s;
+    >a {
         color: var(--txt-light-color);
     }
+}
+
+/* Main */
+main {
+    padding: 1rem;
+}
+
+#directory {
+    margin: 1rem 0;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.list {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    padding: 1rem 0.2rem;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #d0dada, var(--card-color));
+    box-shadow:  6px 6px 10px #8f9696,
+                 -6px -6px 10px #dbebeb;
+}
+
+.card .card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+}
+
+.card-body {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+}
+
+.card-body img {
+    width: 100%;
+    height: 80px;
+    padding: 0.2rem 0.5rem;
+}
+
+.card-body > div {
+    word-break: break-all;
+}
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Buttons */
+.buttons {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.buttons button {
+    width: 30%;
+    border: 1px solid #24b4fb;
+    background-color: #24b4fb;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all ease-in-out 0.2s;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0071e2;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
 }
