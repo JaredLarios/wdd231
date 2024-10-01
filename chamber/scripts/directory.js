@@ -77,8 +77,7 @@ function createMemeberCard(filterMemebers,) {
         let website = document.createElement('p');
         let phone = document.createElement('p');
 
-        // logo.setAttribute('src', `../images/${member.file_name}`)
-        logo.setAttribute('src', `https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg`)
+        logo.setAttribute('src', `./images/${member.file_name}.jpg`)
         logo.setAttribute('width', `250`)
         address.textContent = member.address
         email.textContent = member.email
