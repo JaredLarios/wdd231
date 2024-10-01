@@ -57,17 +57,15 @@ function createMemeberCard(filterMemebers,) {
         // header
         // new elements
         let h3 = document.createElement('h3');
-        let icon = document.createElement('span');
         let memeberP = document.createElement('p');
 
 
         h3.textContent = member.name;
         memeberP.textContent = membership[member.membership -1];
-        icon.setAttribute('css', `${member.iso_certify? 'cert': ''}`)
+        h3.setAttribute('class', `${member.iso_certify? 'cert': ''}`)
 
         // add to dom
         headerCard.appendChild(h3);
-        headerCard.appendChild(icon);
         headerCard.appendChild(memeberP);
 
         
