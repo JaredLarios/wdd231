@@ -37,6 +37,11 @@ p, a {
     font-style: normal;
 }
 
+h1 {
+    text-align: center;
+    padding: 2.5rem;
+}
+
 body {
     background-color: var(--bg-color);
 }
