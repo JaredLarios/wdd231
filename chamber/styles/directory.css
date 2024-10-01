@@ -95,6 +95,11 @@ header .logo img {
 	content: "❎";
 }
 
+.cert::after {
+	content: "✅";
+    padding-left: 0.2rem;
+}
+
 nav {
     display: grid;
     grid-template-rows: 0fr;
@@ -153,6 +158,7 @@ main {
 }
 
 /* Card */
+/* Grid */
 .card {
     display: flex;
     flex-direction: column;
@@ -190,6 +196,17 @@ main {
     display: flex;
     justify-content: center;
 }
+
+/* List */
+.list .card-body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.list img {
+    display: none;
+}
+
 
 /* Buttons */
 .buttons {
