@@ -131,9 +131,10 @@ nav .menu li:hover {
     border-radius: 15px;
     color: var(--txt-light-color);
     transition: ease-in-out 0.3s;
-    >a {
-        color: var(--txt-light-color);
-    }
+}
+
+nav .menu li:hover a {
+    color: var(--txt-light-color);
 }
 
 /* Main */
