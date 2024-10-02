@@ -1,0 +1,22 @@
+@media screen and (min-width: 740px) {
+    /* Header */
+    header .header {
+        display: flex;
+        max-width: 1220px;
+        justify-content: space-around;
+    }
+    /* Menu */
+    #ham {
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+    nav li {
+        margin: 0 5px;
+    }
+}
