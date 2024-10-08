@@ -1,11 +1,15 @@
 import apiFetch from "./api.js";
+import getForecast from "./forecast.js";
+
+/* Variables */
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const data = await apiFetch();
 
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const weatherForecast = document.querySelector('#weather-forecast');
 
-const data = await apiFetch();
 
 const sunTime = (data) => {
     let timezoneOffset = data.timezone;
@@ -20,6 +24,8 @@ const sunTime = (data) => {
 
 if(data){
     displayResults(data.list[0], data.city);
+    const dataForecast = getForecast(data.list)
+    displayForecast(dataForecast, data.list[0].main.temp);
 }
 
 // retreive in dom
@@ -38,6 +44,22 @@ function displayResults(data, suntime) {
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
 }
-console.log(data.list[0]);
+
+function displayForecast(data, today) {
+    const todaysDay = new Date();
+    const tomorrowsDay = daysOfWeek[todaysDay.getDay() +1]
+    const dayAfterDay = daysOfWeek[todaysDay.getDay() +2]
+
+    console.log(tomorrowsDay, dayAfterDay)
+
+    const {tomorrow, dayAfter} = data;
+
+    console.log(tomorrow, dayAfter)
+
+    weatherForecast.innerHTML = `
+                                <p>Today:${today}</p>
+                                <p>${tomorrowsDay}: ${tomorrow.main.temp}</p>
+                                <p>${dayAfterDay}: ${dayAfter.main.temp}</p>
+                                `
+}
