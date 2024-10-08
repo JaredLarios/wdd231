@@ -21,17 +21,6 @@ main {
 
 /* Card */
 /* Grid */
-.card {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    border-radius: 20px;
-    padding: 1rem 0.2rem;
-    justify-content: space-between;
-    background: linear-gradient(145deg, #d0dada, var(--card-color));
-    box-shadow:  6px 6px 10px #8f9696,
-                 -6px -6px 10px #dbebeb;
-}
 
 .card .card-header {
     display: flex;

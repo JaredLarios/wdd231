@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script type="module" src="scripts/dashboard.js"></script>
 </head>
 <body>
     <header>
@@ -68,6 +68,10 @@
             <div class="card">
                 <div class="card-header">
                     <h3>Current Weather</h3>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <div id="current-temp"></div>
+                    </figure>
                 </div>
             </div>
             <div class="card">

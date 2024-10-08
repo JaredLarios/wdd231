@@ -140,6 +140,19 @@ nav .menu li:hover a {
     color: var(--txt-light-color);
 }
 
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    padding: 1rem 0.2rem;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #d0dada, var(--card-color));
+    box-shadow:  6px 6px 10px #8f9696,
+                 -6px -6px 10px #dbebeb;
+}
+
 /* Body Sections */
 /* Banner */
 .banner {
@@ -168,6 +181,8 @@ nav .menu li:hover a {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+
+    box-shadow: none;
 }
 
 .banner button {
@@ -186,20 +201,12 @@ nav .menu li:hover a {
     padding: 0;
 }
 
-
 /* Tabs */
 .tabs {
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 1rem;
-}
-
-.tabs > .card {
-    border: 1px solid yellow;
-    border-radius: 15px;
-    height: 50px;
 }
 
 .tabs > .card > .card-header {
