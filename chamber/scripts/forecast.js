@@ -9,8 +9,6 @@ const getForecast = (data) => {
         return itemDate === today || itemDate === tomorrow || itemDate === dayAfter;
       });
 
-    console.log(new Date().getDay())
-
     // Organize and display data
     const groupedData = {
         tomorrow: filteredData.filter(item => new Date(item.dt * 1000).getDay() === new Date().getDay() +1 )[0],

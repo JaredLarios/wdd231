@@ -108,7 +108,6 @@ function craeteCourseCard(filterCourse) {
     filterCourse.forEach(course => {
         let card = document.createElement('div');
         let name = document.createElement('h3');
-        console.log(course)
 
         name.textContent = course.subject + ' ' + course.number;
         card.setAttribute("class", `${course.completed? "completed": ""}`);

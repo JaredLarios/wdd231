@@ -51,15 +51,11 @@ function displayForecast(data, today) {
     const tomorrowsDay = daysOfWeek[todaysDay.getDay() +1]
     const dayAfterDay = daysOfWeek[todaysDay.getDay() +2]
 
-    console.log(tomorrowsDay, dayAfterDay)
-
     const {tomorrow, dayAfter} = data;
 
-    console.log(tomorrow, dayAfter)
-
     weatherForecast.innerHTML = `
-                                <p>Today:${today}</p>
-                                <p>${tomorrowsDay}: ${tomorrow.main.temp}</p>
-                                <p>${dayAfterDay}: ${dayAfter.main.temp}</p>
+                                <p>Today: ${today}&deg</p>
+                                <p>${tomorrowsDay}: ${tomorrow.main.temp}&deg</p>
+                                <p>${dayAfterDay}: ${dayAfter.main.temp}&deg</p>
                                 `
 }

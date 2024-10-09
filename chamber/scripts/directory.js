@@ -20,7 +20,6 @@ async function getProphetData() {
         const data = await response.json();
         membersData = data
         await createMemeberCard(membersData);
-        console.log(data)
     } catch {
         console.error({response: 404})
     }
