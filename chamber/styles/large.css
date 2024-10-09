@@ -1,4 +1,9 @@
 @media screen and (min-width: 740px) {
+    main {
+        max-width: 1080px;
+        margin: auto;
+    }
+
     /* Header */
     header .header {
         display: flex;
@@ -18,5 +23,12 @@
     }
     nav li {
         margin: 0 5px;
+    }
+
+    /* Weather cards */
+    .tabs {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
