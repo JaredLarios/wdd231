@@ -167,7 +167,6 @@ nav .menu li:hover a {
 }
 
 .banner > .card {
-    border: solid green 1px;
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -213,8 +212,22 @@ nav .menu li:hover a {
     text-align: center;
 }
 
+.tabs .card .card-body {
+    text-align: center;
+}
+
+#current-weather {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: left;
+}
+
+#current-weather img {
+    width: 100px;
+}
+
 #business-cards {
-    border: 1px solid blue;
     height: 250px;
 }
 
