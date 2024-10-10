@@ -1,5 +1,7 @@
 import apiFetch from "./api.js";
 import getForecast from "./forecast.js";
+import businessCards from "./business.js";
+
 
 /* Variables */
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -9,6 +11,7 @@ const data = await apiFetch();
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const weatherForecast = document.querySelector('#weather-forecast');
+const businessCard = document.querySelector('#business-cards');
 
 
 const sunTime = (data) => {
@@ -24,8 +27,11 @@ const sunTime = (data) => {
 
 if(data){
     displayResults(data.list[0], data.city);
-    const dataForecast = getForecast(data.list)
+    const dataForecast = getForecast(data.list);
     displayForecast(dataForecast, data.list[0].main.temp);
+    const business = await businessCards();
+    console.log(business);
+    displayBusinessCard(business);
 }
 
 // retreive in dom
@@ -58,4 +64,36 @@ function displayForecast(data, today) {
                                 <p>${tomorrowsDay}: ${tomorrow.main.temp}&deg</p>
                                 <p>${dayAfterDay}: ${dayAfter.main.temp}&deg</p>
                                 `
+}
+
+function displayBusinessCard(data) {
+    businessCard.innerHTML = ``;
+    data.forEach(element => {
+        let card = document.createElement('div');
+        let cardHeader = document.createElement('div');
+        let cardBody = document.createElement('div');
+        let h3 = document.createElement('h3');
+
+        card.setAttribute('class', 'card');
+        cardHeader.setAttribute('class', 'card-header');
+        cardBody.setAttribute('class', 'card-body');
+
+        h3.innerText = element.name
+
+
+        cardBody.innerHTML = `
+                                        <div>
+                                            <img src='./images/${element.file_name}.jpg' alt='${element.name}' width='150'>
+                                        </div>
+                                        <div>
+                                            <p>Email: ${element.email}</p>
+                                            <p>Phone: ${element.phone}</p>
+                                            <p>URL: <a href='${element.url}'>${element.url}</p>
+                                        </div>
+                                `
+        cardHeader.appendChild(h3)
+        card.appendChild(cardHeader)
+        card.appendChild(cardBody)
+        businessCard.appendChild(card)
+    })
 }
