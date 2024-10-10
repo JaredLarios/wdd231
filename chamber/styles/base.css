@@ -264,6 +264,7 @@ nav .menu li:hover a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    padding: 0 1rem;
 }
 
 #business-cards .card-body p {
