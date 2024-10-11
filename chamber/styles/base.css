@@ -13,6 +13,7 @@
     --menu-hover: #24b4fb;
 
     --card-color: #dee0e0;
+    --card-color2: #dee0e0a4;
 
 
     --test1: red;
@@ -162,13 +163,12 @@ nav .menu li:hover a {
 /* Banner */
 .banner {
     position: relative;
-    width: 100%;
+    padding: 1rem;
 }
 .banner img {
-    border: 1px solid grey;
     width: 100%;
-    height: 200px;
     object-fit: cover;
+    border-radius: 1rem;
 }
 
 .banner > .card {
@@ -187,6 +187,7 @@ nav .menu li:hover a {
     gap: 10px;
 
     box-shadow: none;
+    background: linear-gradient(145deg, #d0dadaa8, var(--card-color2));;
 }
 
 .banner button {
@@ -274,6 +275,7 @@ nav .menu li:hover a {
 #business-cards img {
     width: 100%;
     height: 100%;
+    max-height: 100px;
     border-radius: 1rem;
     object-fit: cover;
 }
