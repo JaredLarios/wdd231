@@ -30,7 +30,6 @@ if(data){
     const dataForecast = getForecast(data.list);
     displayForecast(dataForecast, data.list[0].main.temp);
     const business = await businessCards();
-    console.log(business);
     displayBusinessCard(business);
 }
 
@@ -54,8 +53,11 @@ function displayResults(data, suntime) {
 
 function displayForecast(data, today) {
     const todaysDay = new Date();
-    const tomorrowsDay = daysOfWeek[todaysDay.getDay() +1]
-    const dayAfterDay = daysOfWeek[todaysDay.getDay() +2]
+    const tomorrowDate = new Date(todaysDay.getDate() + 1);
+    const dayAfterDate = new Date(todaysDay.getDate() + 2);
+    const tomorrowsDay = daysOfWeek[tomorrowDate.getDay()]
+    const dayAfterDay = daysOfWeek[dayAfterDate.getDay()]
+
 
     const {tomorrow, dayAfter} = data;
 
