@@ -1,7 +1,7 @@
 :root {
     --main-color: white;
-    --second-color: white;
-    --third-color: white;
+    --second-color: #1084be;
+    --third-color: grey;
     --shadow-box: #bebebe;
     --light-box: #ffffff;
     --bg-color: white;
@@ -16,9 +16,6 @@
     --card-color2: #dee0e0a4;
 
 
-    --test1: red;
-    --test2: green;
-    --test3: yellow;
 }
 
 
@@ -33,7 +30,7 @@ h1, h2, h3 {
     font-style: normal;
 }
 
-p, a {
+p, a, label {
     font-family: "Roboto Flex", sans-serif;
     font-style: normal;
 }
