@@ -21,8 +21,11 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
 
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+
     <script src="scripts/main.js" defer></script>
-    <script type="module" src="scripts/dashboard.js"></script>
+    <script type="module" src="scripts/join.js"></script>
 </head>
 <body>
     <header>
@@ -40,128 +43,20 @@
             
             <nav>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./directory.html">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="./join.html">Join</a></li>
                     <li><a href="#">Discover</a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
-    <main>    
-      <form action="thankyou.html" method="get">
-        <fieldset>
-          <legend>Contact Information</legend>
-
-          <label class="textEntry">
-            First Name*
-            <input type="text" name="fname" required />
-          </label>
-
-          <label class="textEntry">
-            Last Name*
-            <input type="text" name="lname" required />
-          </label>
-
-          <label class="textEntry">
-            Business Position Title
-            <input type="text" class="regulation" />
-          </label>
-
-          <span id="posErr" class="textEntry"></span>
-
-          <label class="textEntry">
-            Email*
-            <input type="email" name="email" placeholder="someone@example.com" required/>
-          </label>
-
-          <label class="textEntry">
-            Phone*
-            <input type="tel" name="phone" placeholder="5025555" required />
-          </label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Business Information</legend>
-
-          <label class="textEntry">
-            Business Name/Title*
-            <input type="text" name="bname" required />
-          </label>
-
-          <div>Membership Level</div>
-
-          <label class="sbs">
-            <input type="radio" name="level" value="gold" />
-            Gold Membership
-          </label>
-
-          <label class="sbs">
-            <input type="radio" name="level" value="silver" />
-            Silver Membership
-          </label>
-
-          <label class="sbs">
-            <input type="radio" name="level" value="bronze" />
-            Bronze Membership
-          </label>
-
-          <label class="sbs">
-            <input type="radio" name="level" value="np" />
-            NP Membership
-          </label>
-
-          <label for="description" class="textEntry">
-            Business Description
-            <div id="description">
-              <textarea name="description" cols="45" rows="10"></textarea>
-            </div>
-          </label>
-
-          <label class="textEntry" id="date">
-            Date
-            <input type="datetime" name="date" />
-          </label>
-        </fieldset>
-
-        <input type="submit" value="Join to GT Chamber" class="submitBtn" />
-      </form>
-
-      <section class="service-lvl-info">
-        <h2>Service Level Benefits</h2>
-        <h3>Gold Membership - Q3,000/month</h3>
-        <p>
-          The <strong>Gold Membership</strong> have benefits of spolitght your
-          webpage on our Home Page, free meeting tickets for our events and
-          couching for your business for each payed month. You'll recieve
-          special information for oportunity of events where you can promote
-          your business.
-        </p>
-        <h3>Silver Membership - Q2,000/month</h3>
-        <p>
-          The <strong>Silver Membership</strong> have benefits of free meeting
-          tickets for our events and 35% discounts couching for your business
-          for each payed month. You'll recieve special information for
-          oportunity of events where you can promote your business.
-        </p>
-        <h3>Bronze Membership - Q1,000/month</h3>
-        <p>
-          The <strong>Bronze Membership</strong> have benefits of 35% discounts
-          couching for your business for each payed month. You'll recieve
-          special information for oportunity of events where you can promote
-          your business.
-        </p>
-        <h3>Non Profit Organizations Membership - FREE</h3>
-        <p>
-          The
-          <strong>NP Membership or Non Profit Organizations Membership</strong>
-          have benefits of 15% discounts couching for your business for each
-          payed month. You'll recieve special information for oportunity of
-          events where you can promote your business.
-        </p>
+    <main>
+      <section class="thanks">
+          <h1>Welcome to the GT Chamber!</h1>
+          <p>Thanks for applying to the chamber of comerse of GT Chamber. You're going to recieve emails with updates of our events and meetings</p>
       </section>
-
     </main>
     <footer>
         <p>

@@ -28,4 +28,8 @@
     section.service-lvl-info p {
         padding-bottom: 15px;
     }
+
+    .thanks {
+        grid-column: 1/3;
+    }
 }
