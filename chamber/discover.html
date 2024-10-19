@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="E. Jared Larios" >
+    <meta name="description" content="Direcotry of chamber of commerce memebers.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    
+    <title>Chamber GT | Home Page</title>
+
+    <meta property="og:title" content="Chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./logo.jpg">
+    <meta property="og:url" content="https://www.facebook.com/">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="stylesheet" href="styles/discover.css">
+
+
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="main-header">
+                <div class="logo">
+                    <img src="./images/logo.jpg" alt="logo" width="150">
+                    <div>
+                        <h2>GT Chamber</h2>
+                        <p>Chamber of Commerce</p>
+                    </div>
+                </div>
+                <button id="ham"></button>
+            </div>
+            
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
+                    <li><a href="./join.html">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div id="discover-container">
+            <h1 class="main-heading">Discover Guatemala</h1>
+
+            <div class="sidebar">
+                <div class="card" id="welcome">
+                    <h2>Welcome</h2>
+                    <p class="card-content" id="user-visit-msg"></p>
+                </div>
+                <div class="card" id="about">
+                    <h2>About Gilbert</h2>
+                    <ul class="card-content">
+                        <li><p><span class="card-label">Founded:</span>1821</p></li>
+                        <li><p><span class="card-label">Population:</span>18,489,795 (2024)</p></li>
+                        <li><p><span class="card-label">% of Population LDS:</span>1.6% </p></li>
+                        <li><p><span class="card-label">Expected Population by 2030:</span>387,475 </p></li>
+                    </ul>
+                </div>
+                <div class="card" id="upcoming-events">
+                    <h2>Upcoming Events</h2>
+                    <div class="card-content" id="event-img">
+                        <a class="card-content" href="https://arizonafairsandfestivals.com/Gilbert-AZ" target="_blank">
+                            <img src="images/gilbert-fair.jpeg" width="300" height="300" alt="Upcoming Gilbert Street Fairs">
+                        </a>
+                    </div>
+                </div>
+                <div class="card" id="development">
+                    <h2>Upcoming Development</h2>
+                    <p class="card-content" >The District at Cooley Station will include two four-story buildings, parking garages, and commercial development. 
+                        Another project, Heritage Park, is a $300 million mixed-use development that will include a hotel, apartments, office building, restaurants, and retail </p>
+                </div>
+            </div>
+            <div id="img-area">
+                <figure>
+                    <img src="images/ala.jpg" alt="Top rated school in Gilbert" class="discover-img" loading="lazy" width="800" height="600">
+                    <figcaption>American Leadership Academy #1 Rated School in Gilbert</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/splashpad.jpeg" alt="Splash pad in Gilbert" class="discover-img" loading="lazy" width="800" height="600">
+                    <figcaption>Splash Pad for those HOT summer days!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/temple.jpg" alt="Gilbert Temple" class="discover-img" loading="lazy" width="800" height="600">
+                    <figcaption>Gilbert Temple open to visitors</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/downtown.jpg" alt="" class="discover-img" loading="lazy" width="800" height="600">
+                    <figcaption>Downtown Gilbert Nightlife</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/house.jpeg" alt="Cookie cutter houses" class="discover-img" loading="lazy" width="800" height="600">
+                    <figcaption>Style of the houses in Gilbert, AZ</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lake.jpg" alt="Fishing lake in Gilbert" class="discover-img" loading="lazy" width="800" height="600">
+                    <figcaption>Best fishing lake</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | E. Jared Larios | Guatemala City
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
