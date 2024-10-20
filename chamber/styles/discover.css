@@ -1,25 +1,15 @@
-
-/* MAIN SECTION */
-
-
-#discover-container {
-    margin: 0px 20px 20px 20px;
+main {
+    padding: 0 1rem;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-#thanks-container {
-    text-align: center;
-}
-
-
-.main-heading {
+main h1 {
     font-size: 1.75rem;
 }
 
-#home-cards, #directory-cards {
-    display: flex;
-    flex-direction: column;
+main img {
+    object-fit: cover;
 }
 
 .home-card, .sidebar div{
@@ -28,7 +18,7 @@
     font-size: 0.9rem;
 }
 
-.home-card h2, #form-container h2, .sidebar h2{
+.home-card h2 h2, .sidebar h2{
     margin: 0;
     font-size: 1rem;
     background-color: var(--secondary-color);
@@ -36,46 +26,9 @@
     padding: 10px;
 }
 
-#home-dir-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
 .card-content {
     margin: 0;
     padding: 20px;
-}
-
-#weather-icon {
-    grid-column: 1/2;
-    padding: 20px;
-    justify-self: center;
-}
-
-#current-weather-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding-right: 10px;
-}
-
-.temps {
-    font-weight: bold;
-}
-
-#temp-desc {
-    text-transform: capitalize;
-}
-
-#forecast-details {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-}
-
-#forecast-details span {
-    padding: 10px;
 }
 
 .card-label {
@@ -93,141 +46,8 @@
     display: none; 
 }
 
-#directory-cards {
-    display: grid;
-    gap: 20px;
-}
-.member-card {
-    display: block;
-    background-color: var(--card-color);
-    padding: 20px;
-    font-size: 0.9rem;
-    max-width: 100%;
-    word-break: break-all; 
-    word-wrap: break-word;
-    /* margin-bottom:20px */
-}
-
-.member-card h2 {
-    text-align: center;
-    margin: 0;
-    font-size: 1rem;
-}
-
-.member-card .level {
-    text-align: center;
-    font-style: italic;
-    margin: 10px 0 20px 0;
-    padding-bottom: 5px;
-    font-size: .9rem;
-    border-bottom: 1px solid var(--text-color-dark);
-}
-
-.member-img {
-    float: left;
-    width: 5vw;
-    height: auto;
-    max-width: 100px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-.member-card .info {
-    margin: 5px;
-}
-
-.member-card a {
-    margin: 0;
-}
-
-#form-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0 auto;
-    background-color: var(--card-color);
-}
-
-#form-container form {
-    padding: 20px;
-}
-
-.join-form .form-label {
-    margin: 10px 0;
-    display: flex;
-    flex-direction: column;
-    color: var(--text-color-dark);
-}
-
-.join-form .form-input, .form-textarea {
-    height: 44px;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 5px 0;
-    padding: 10px;
-}
-
-.join-form .form-textarea {
-    height: 140px;
-    text-wrap: wrap;
-    resize: vertical; 
-}
-
-.join-form input:required, .join-form input:invalid {
-    border-left: 5px solid maroon;
-}
-
-.join-form input:valid, .join-form textarea:valid {
-    border-left: 5px solid green;
-}
-
-.join-form fieldset {
-    box-sizing: border-box;
-    padding: 20px;
-    margin: 10px 0;
-    border: 1px solid var(--primary-color);
-    width: 100%;
-}
-
-.radio-button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;  
-    color: var(--text-color-dark);
-    background-color: var(--background-color);
-    border: 1px solid var(--secondary-color);
-    border-radius: 10px;  
-    width: 70%;
-    height: 44px;
-    cursor: pointer; 
-}
-
-.radio-button input {
-    /* display: none; */
-
-    margin-right: 10px;
-}
-
-.radio-button.np {
-    animation: pulseNP 2s infinite;
-}
-
-.radio-button.bronze {
-    animation: pulseBronze 2s infinite;
-}
-
-.radio-button.silver {
-    animation: pulseSilver 2s infinite;
-}
-
-.radio-button.gold{
-    animation: pulseGold 2s infinite;
-}
 
 #user-visit-msg {
-    font-family: var(--font-family-serif);
     font-weight: bold;
     font-size: 1.2rem;
 
@@ -241,11 +61,11 @@
     list-style-type: none;
 }
 
-#about p {
+.about p {
     margin: 0;
 }
 
-#event-img {
+.event-img {
     display: flex;
     justify-content: center;
     padding: 0;
@@ -261,26 +81,17 @@
     margin-bottom: 10px;
 }
 
-.bylaws {
-    display: block;
-    margin-top: 20px;
-    padding: 20px;
-    text-decoration: none;
-    text-align: center;
-    background-color: var(--secondary-color);
-    color: var(--text-color)
-}
 
-#img-area {
+.gallery {
     width: 80%;
     display: flex;
     flex-direction: column;
 }
 
-#img-area figure {
+.gallery figure {
     margin: 0 20px;
 }
-#img-area figcaption {
+.gallery figcaption {
     font-family: var(--font-family-serif);
     text-align: center;
     margin: 5px 0 20px 0;
