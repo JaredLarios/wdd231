@@ -1,0 +1,294 @@
+:root {
+    --main-color: #DBAD6A;
+    --second-color: #435660;
+    --third-color: grey;
+    --shadow-box: #bebebe;
+    --light-box: #ffffff;
+    --bg-color: white;
+
+    --txt-dark-color: #000000;
+    --txt-light-color: #ffffff;
+
+
+    --menu-hover: #DBAD6A;
+
+    --card-color: #dee0e0;
+    --card-color2: #dee0e0a4;
+}
+
+
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: "Roboto Flex", sans-serif;
+    font-style: normal;
+}
+
+p, a, label {
+    font-family: "Roboto Flex", sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    padding: 2.5rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.quote-button {
+    border: 1px solid var(--menu-hover);
+    background-color: var(--menu-hover);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    transition: all ease-in-out 0.2s;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    background-color: var(--test1);
+    display: flex;
+    justify-content: center;
+
+    border-radius: 0 0 30px 30px;
+    background: var(--bg-color);
+    box-shadow:  20px 20px 60px var(--shadow-box),
+             -20px -20px 60px var(--light-box);
+}
+
+header .header {
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+header p, header h2 {
+    padding: 0;
+    text-align: left;
+}
+
+header .main-header {
+    display: flex;
+    padding: 0.5rem;
+}
+
+header .logo {
+    display: flex;
+    gap: 10px;
+}
+header .logo img {
+    width: 50px;
+    height: 50px;
+    border: solid blue 3px;
+    border-radius: 50%;
+}
+
+/* Ham Menu */
+
+#ham {
+    font-size: 1.8rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#ham::before {
+	content: "☰";
+}
+
+#ham.open::before {
+	content: "❎";
+}
+
+.cert::after {
+	content: "✅";
+    padding-left: 0.2rem;
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+nav .menu {
+    overflow: hidden;
+    list-style: none;
+    text-align: center;
+}
+
+nav .menu li {
+    padding: 0.5rem;
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: var(--txt-dark-color);
+}
+
+nav .menu li:hover {
+    background-color: var(--menu-hover);
+    border-radius: 15px;
+    color: var(--txt-light-color);
+    transition: ease-in-out 0.3s;
+}
+
+nav .menu li:hover a {
+    color: var(--txt-light-color);
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    padding: 1rem 0.2rem;
+    justify-content: space-between;
+    background: linear-gradient(145deg, #d0dada, var(--card-color));
+    box-shadow:  6px 6px 10px #8f9696,
+                 -6px -6px 10px #dbebeb;
+}
+
+/* Body Sections */
+/* Banner */
+.banner {
+    position: relative;
+    padding: 1rem;
+}
+.banner img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.banner > .card {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+
+    border-radius: 15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    box-shadow: none;
+    background: linear-gradient(145deg, #d0dadaa8, var(--card-color2));
+}
+
+.banner button {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    padding: 0;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1.5rem 1rem 0 1rem;
+}
+
+.tabs > .card > .card-header {
+    text-align: center;
+}
+
+.tabs .card .card-body {
+    text-align: center;
+}
+
+.tabs .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+}
+
+#current-weather {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: left;
+}
+
+#current-weather img {
+    width: 100px;
+}
+
+
+/* Business Cards */
+#business-cards {
+    padding: 1.5rem 1rem 3rem 1rem;
+    gap: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#business-cards .card {
+    flex: 1 1 150px;
+    flex: 0 1 100%;
+    justify-content: start;
+}
+
+#business-cards .card-header {
+    text-align: center;
+}
+
+#business-cards .card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 0 1rem;
+}
+
+#business-cards .card-body p {
+    overflow-wrap: break-word;
+}
+
+#business-cards img {
+    width: 100%;
+    height: 100%;
+    max-height: 100px;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}

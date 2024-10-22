@@ -1,0 +1,104 @@
+main {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main h1 {
+    font-size: 1.75rem;
+}
+
+main img {
+    object-fit: cover;
+}
+
+.home-card, .sidebar div{
+    background-color: var(--card-color);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.home-card h2 h2, .sidebar h2{
+    margin: 0;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.card-content {
+    margin: 0;
+    padding: 20px;
+}
+
+.card-label {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: .9rem;
+}
+
+.dir-layout {
+    display: none;
+    margin-right: 20px;
+}
+
+.dir-layout input {
+    display: none; 
+}
+
+
+#user-visit-msg {
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.about p {
+    margin: 0;
+}
+
+.event-img {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.card-content img {
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.card-content li {
+    margin-bottom: 10px;
+}
+
+
+.gallery {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery figure {
+    margin: 0 20px;
+}
+.gallery figcaption {
+    font-family: var(--font-family-serif);
+    text-align: center;
+    margin: 5px 0 20px 0;
+}
+.discover-img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgb(0,0,0,.5 );
+}

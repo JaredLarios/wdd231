@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="E. Jared Larios" >
+    <meta name="description" content="Direcotry of chamber of commerce memebers.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    
+    <title>Directory Page</title>
+
+    <meta property="og:title" content="Chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./logo.jpg">
+    <meta property="og:url" content="https://www.facebook.com/">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="main-header">
+                <div class="logo">
+                    <img src="./images/logo.jpg" alt="logo" width="150">
+                    <div>
+                        <h2>GT Chamber</h2>
+                        <p>Chamber of Commerce</p>
+                    </div>
+                </div>
+                <button id="ham"></button>
+            </div>
+            
+            <nav>
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="./join.html">Join</a></li>
+                    <li><a href="./discover.html">Discover</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+        
+    <main>
+        <h1>Directory</h1>
+        <section class="buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </section>
+        <section id="directory"></section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | E. Jared Larios | Guatemala City
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>

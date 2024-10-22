@@ -1,0 +1,85 @@
+/* Main */
+main {
+    padding: 1rem;
+}
+
+#directory {
+    margin: 1rem 0;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.list {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+/* Card */
+/* Grid */
+
+.card .card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+}
+
+.card-body {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+}
+
+.card-body img {
+    width: 100%;
+    height: 80px;
+    padding: 0.2rem 0.5rem;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card-body > div {
+    word-break: break-all;
+}
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* List */
+.list .card-body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.list img {
+    display: none;
+}
+
+
+/* Buttons */
+.buttons {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.buttons button {
+    width: 30%;
+    border: 1px solid #24b4fb;
+    background-color: #24b4fb;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all ease-in-out 0.2s;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0071e2;
+}

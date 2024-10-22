@@ -1,0 +1,34 @@
+@media screen and (min-width: 740px) {
+    main {
+        max-width: 980px;
+        margin: auto;
+    }
+
+    /* Header */
+    header .header {
+        display: flex;
+        max-width: 1220px;
+        justify-content: space-around;
+    }
+    /* Menu */
+    #ham {
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+    }
+    nav li {
+        margin: 0 5px;
+    }
+
+    /* Weather cards */
+    .tabs, #business-cards {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

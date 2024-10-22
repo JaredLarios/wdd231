@@ -1,0 +1,93 @@
+/* --- Form ---*/
+
+form fieldset {
+    border: 1px solid var(--txt-dark-color);
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 25rem;
+    margin: 1rem auto;
+}
+
+form legend {
+    color: var(--txt-dark-color);
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+}
+
+form label.textEntry, 
+form div,
+form span {
+    display: block;
+    padding-top: 1rem;
+    color: var(--txt-dark-color);
+    font-size: 00.8rem;
+}
+
+form label.textEntry input,
+form label.textEntry select,
+form label.texEntry textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px grey;
+    border-radius: 4px;
+    padding: 0.75rem 0;
+    color: black;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #0000001a;
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: grey;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+form label.textEntry:required,
+.invalid {
+    background-color: #ff000065;
+}
+
+form label.textEntry input:required:valid,
+.valid {
+    background-color: #33ff003d;
+}
+
+form label.textEntry input::placeholder {
+    color: #646464b0;
+}
+
+form label.textEntry input:focus{
+    border-color: var(--second-color);
+}
+
+form textarea {
+	max-width: 100%;
+}
+form div#description {
+    width: 345px;
+}
+
+section.service-lvl-info {
+    display: none;
+}
+
+/* thanks message */
+
+section.thanks {
+    padding: 5rem 0;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="E. Jared Larios" >
+    <meta name="description" content="TLI official site for customers who are looking for quotes, service information, etc.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    
+    <title>TLI | Home Page</title>
+
+    <meta property="og:title" content="Chamber">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./logo.jpg">
+    <meta property="og:url" content="https://www.facebook.com/">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/dashboard.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="main-header">
+                <div class="logo">
+                    <img src="./images/logo.jpg" alt="logo" width="150">
+                    <div>
+                        <h2>TLI</h2>
+                        <p>We move the world!</p>
+                    </div>
+                </div>
+                <button id="ham" title="ham"></button>
+            </div>
+            
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
+                    <li><a href="./join.html">Join</a></li>
+                    <li class="li-btn"><button class="quote-button">Get a Free Quote</button></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <picture class="img">
+                <source srcset="images/banner-large.webp" media="(min-width: 1000px )">
+                <source srcset="images/banner-medium.webp" media="(min-width: 500px )">
+                <img src="images/banner-small.webp" alt="Guatemala - City" width="500" height="250">
+            </picture>
+            <div class="card">
+                <h1>We move the World!</h1>
+                <p>Get a quote from world's first class of transportation's company.</p>
+                <button class="quote-button" id="join">Get a Free Quote</button>
+            </div>
+        </section>
+        <h2>Home</h2>
+        <section class="tabs">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Events</h3>
+                </div>
+                <div class="card-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda non fugit iste repudiandae, corrupti, quibusdam voluptates ipsum repellendus earum quod iusto sed quos harum? Aperiam eaque explicabo consequatur molestiae ipsum.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Current Weather</h3>
+                </div>
+                <div class="card-body" id="current-weather">
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                    </figure>
+                    <div id="current-temp"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Weather Forecast</h3>
+                </div>
+                <div class="card-body" id="weather-forecast"></div>
+            </div>
+        </section>
+        <section id="business-cards"></section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | E. Jared Larios | Guatemala City
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
