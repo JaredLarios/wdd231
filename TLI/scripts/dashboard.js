@@ -9,8 +9,8 @@ const data = await apiFetch();
 
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const weatherForecast = document.querySelector('#weather-forecast');
+// const weatherIcon = document.querySelector('#weather-icon');
+// const weatherForecast = document.querySelector('#weather-forecast');
 const businessCard = document.querySelector('#business-cards');
 const joinButton = document.querySelector('#join');
 
@@ -31,9 +31,11 @@ const sunTime = (data) => {
 }
 
 if(data){
+    /*
     displayResults(data.list[0], data.city);
     const dataForecast = getForecast(data.list);
     displayForecast(dataForecast, data.list[0].main.temp);
+    */
     const business = await businessCards();
     displayBusinessCard(business);
 }
