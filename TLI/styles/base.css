@@ -45,6 +45,12 @@ h2 {
 
 body {
     background-color: var(--bg-color);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+main {
+    min-height: 80vh;
 }
 
 .quote-button {
@@ -102,8 +108,8 @@ header .logo img {
     border: 0;
     background: none;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 1.5rem;
+    right: 2rem;
 }
 
 #ham::before {
