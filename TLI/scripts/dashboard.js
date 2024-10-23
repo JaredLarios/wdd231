@@ -1,6 +1,6 @@
 import apiFetch from "./api.js";
 import getForecast from "./forecast.js";
-import businessCards from "./business.js";
+import feedbackCards from "./feedback.js";
 
 
 /* Variables */
@@ -11,7 +11,7 @@ const data = await apiFetch();
 const currentTemp = document.querySelector('#current-temp');
 // const weatherIcon = document.querySelector('#weather-icon');
 // const weatherForecast = document.querySelector('#weather-forecast');
-const businessCard = document.querySelector('#business-cards');
+const feedbackCard = document.querySelector('#feedback-cards');
 const joinButton = document.querySelector('#join');
 
 joinButton.onclick = function() {
@@ -36,8 +36,8 @@ if(data){
     const dataForecast = getForecast(data.list);
     displayForecast(dataForecast, data.list[0].main.temp);
     */
-    const business = await businessCards();
-    displayBusinessCard(business);
+    const feedback = await feedbackCards();
+    displayFeedbackCard(feedback);
 }
 
 // retreive in dom
@@ -75,34 +75,33 @@ function displayForecast(data, today) {
                                 `
 }
 
-function displayBusinessCard(data) {
-    businessCard.innerHTML = ``;
+function displayFeedbackCard(data) {
+    feedbackCard.innerHTML = ``;
     data.forEach(element => {
         let card = document.createElement('div');
         let cardHeader = document.createElement('div');
         let cardBody = document.createElement('div');
         let h3 = document.createElement('h3');
+        let fDate = document.createElement('p');
 
         card.setAttribute('class', 'card');
         cardHeader.setAttribute('class', 'card-header');
         cardBody.setAttribute('class', 'card-body');
 
-        h3.innerText = element.name
+        h3.innerText = '@' + element.username;
+        fDate.innerText = element.date;
 
 
         cardBody.innerHTML = `
                                         <div>
-                                            <img src='./images/${element.file_name}.jpg' alt='${element.name}' width='150'>
-                                        </div>
-                                        <div>
-                                            <p>Email: ${element.email}</p>
-                                            <p>Phone: ${element.phone}</p>
-                                            <p>URL: <a href='${element.url}'>${element.url}</p>
+                                            <p>${element.comment}</p>
+                                            <p>❤️${element.stars}</p>
                                         </div>
                                 `
-        cardHeader.appendChild(h3)
-        card.appendChild(cardHeader)
-        card.appendChild(cardBody)
-        businessCard.appendChild(card)
+        cardHeader.appendChild(h3);
+        cardHeader.appendChild(fDate);
+        card.appendChild(cardHeader);
+        card.appendChild(cardBody);
+        feedbackCard.appendChild(card);
     })
 }

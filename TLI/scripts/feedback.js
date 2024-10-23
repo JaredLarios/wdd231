@@ -1,4 +1,4 @@
-const membersData = '../chamber/data/members.json'
+const feedbackData = './data/feedback.json'
 
 const randomChoice = (options) => {
     let myCopyOpt = options;
@@ -12,14 +12,14 @@ const randomChoice = (options) => {
 }
 
 const getThreeCards = (data) => {
-    let goldSilverMember = data.filter(member => member.membership > 1);
-    const response = randomChoice(goldSilverMember);
+    const response = randomChoice(data);
+    console.log(response)
     return response;
 }
 
 const businessCards = async () => {
     try {
-        const response = await fetch(membersData);
+        const response = await fetch(feedbackData);
         const data = await response.json();
         const myChoices = await getThreeCards(data);
         
