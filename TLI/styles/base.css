@@ -253,6 +253,16 @@ nav .menu li:hover a {
     padding: 1.5rem 1rem;
 }
 
+.feedback .card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 1rem;
+}
+
+.feedback .card-body {
+    padding: 0 1rem;
+}
 
 
 /* Footer */
