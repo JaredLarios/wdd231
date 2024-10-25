@@ -62,7 +62,7 @@ function createCard(data) {
             let row = document.createElement('tr')
             row.innerHTML = `
                 <td>${element.date}</td>
-                <td>${element.username}</td>
+                <td>@${element.username}</td>
                 <td>${element.comment}</td>
                 <td>${element.stars}</td>
             `
