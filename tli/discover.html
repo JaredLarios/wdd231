@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="E. Jared Larios" >
-    <meta name="description" content="Direcotry of chamber of commerce memebers.">
+    <meta name="description" content="TLI official site for customers who are looking for quotes, service information, etc.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     
-    <title>Chamber GT | Discover Page</title>
+    <title>TLI | Home Page</title>
 
     <meta property="og:title" content="Chamber">
     <meta property="og:type" content="website">
@@ -21,12 +21,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <link rel="stylesheet" href="styles/discover.css">
-    <link rel="stylesheet" href="styles/discover-large.css">
-
-
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/discover.js" defer></script>
+    <script type="module" src="scripts/dashboard.js"></script>
 </head>
 <body>
     <header>
@@ -35,19 +31,20 @@
                 <div class="logo">
                     <img src="./images/logo.jpg" alt="logo" width="150">
                     <div>
-                        <h2>GT Chamber</h2>
-                        <p>Chamber of Commerce</p>
+                        <h2>TLI</h2>
+                        <p>We move the world!</p>
                     </div>
                 </div>
-                <button id="ham"></button>
+                <button id="ham" title="ham"></button>
             </div>
             
             <nav>
                 <ul class="menu">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./directory.html">Directory</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./reviews.html">Reviews</a></li>
+                    <li><a href="./discover.html">Services</a></li>
                     <li><a href="./join.html">Join</a></li>
-                    <li><a href="#">Discover</a></li>
+                    <li class="li-btn"><button class="quote-button">Get a Free Quote</button></li>
                 </ul>
             </nav>
 
