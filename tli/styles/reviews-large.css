@@ -1,0 +1,7 @@
+@media screen and (min-width: 740px) {
+    /* Main */
+    main {
+        max-width: 1080px;
+        margin: auto;
+    }
+}
