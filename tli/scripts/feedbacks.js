@@ -39,23 +39,16 @@ function createCard(data) {
 
     if(directory.getAttribute("class") !== "grid") {
         let table = document.createElement('table');
-        let header = document.createElement('tr');
-        let dateH = document.createElement('th');
-        let usernameH = document.createElement('th');
-        let commentH = document.createElement('th');
-        let starsH = document.createElement('th');
 
-        dateH.innerText = 'Date'
-        usernameH.innerText = 'Username'
-        commentH.innerText = 'Comment'
-        starsH.innerText = 'Stars'
+        table.innerHTML = `
+                <tr>
+                    <th>Date</th>
+                    <th>Username</th>
+                    <th>Comment</th>
+                    <th>Rate</th>
+                </tr>
+                `
 
-
-        header.appendChild(dateH);
-        header.appendChild(usernameH);
-        header.appendChild(commentH);
-        header.appendChild(starsH);
-        table.appendChild(header);
         directory.append(table);
 
         data.forEach(element => {
@@ -64,7 +57,7 @@ function createCard(data) {
                 <td>${element.date}</td>
                 <td>@${element.username}</td>
                 <td>${element.comment}</td>
-                <td>${element.stars}</td>
+                <td>❤️ ${element.stars}</td>
             `
             table.appendChild(row);
         })
@@ -80,6 +73,7 @@ function createCard(data) {
             </div>
             <div class="card-body">
                 <p>${element.comment}</p>
+                <p>❤️ ${element.stars}</p>
             </div>
             `
             directory.appendChild(card);
