@@ -86,37 +86,31 @@
         </fieldset>
 
         <fieldset>
-          <legend>Business Information</legend>
+          <legend>Transportation Specifications</legend>
 
           <label class="textEntry">
-            Business Name/Title*
-            <input type="text" name="bname" required />
+            From*
+            <input type="text" name="from-address" required />
           </label>
 
-          <div>Membership Level</div>
-
-          <label class="sbs">
-            <input type="radio" name="level" value="gold" />
-            Gold Membership
+          <label class="textEntry">
+            To*
+            <input type="text" name="to-address" required />
           </label>
 
-          <label class="sbs">
-            <input type="radio" name="level" value="silver" />
-            Silver Membership
-          </label>
-
-          <label class="sbs">
-            <input type="radio" name="level" value="bronze" />
-            Bronze Membership
-          </label>
-
-          <label class="sbs">
-            <input type="radio" name="level" value="np" />
-            NP Membership
-          </label>
+          <div>Service Level</div>
+          <select name="level" class="sbs">
+            <option value="" disabled selected>--- Select a Service ---</option>
+            <option value="freight">Freight Service</option>
+            <option value="oversize">Oversize Service</option>
+            <option value="overseas">Overseas Service</option>
+            <option value="air">Air Service</option>
+            <option value="groundx">Domestic Express Service</option>
+            <option value="grounds">Domestic Standard Service</option>
+          </select>
 
           <label for="description" class="textEntry">
-            Business Description
+            Additional Notes
             <div id="description">
               <textarea name="description" cols="45" rows="10"></textarea>
             </div>
@@ -128,7 +122,7 @@
           </label>
         </fieldset>
 
-        <input type="submit" value="Join to GT Chamber" class="submitBtn" />
+        <input type="submit" value="Get a Free Quote" class="submitBtn" />
       </form>
 
       <section class="service-lvl-info">

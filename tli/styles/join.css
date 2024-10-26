@@ -25,7 +25,7 @@ form span {
 
 form label.textEntry input,
 form label.textEntry select,
-form label.texEntry textarea {
+form label.texEntry textarea{
     display: block;
     font-size: 1rem;
     border: solid 1px grey;
@@ -37,10 +37,10 @@ form label.texEntry textarea {
     background-color: #0000001a;
 }
 
-form label.sbs {
-    display: block;
-    padding: 0.75rem 0;
-    color: grey;
+form .sbs {
+    padding: 0.75rem;
+    width: 100%;
+    max-width: 20rem;
 }
 
 form input.submitBtn {
