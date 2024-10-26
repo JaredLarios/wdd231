@@ -30,17 +30,25 @@ main {
 
 
 /* List */
-.list th {
-    border-bottom: 1px solid grey;
+.list table {
+    border-collapse: collapse;
 }
 
-.list td {
-    border-bottom: 1px solid grey;
+.list table th {
+    background-color: var(--main-color);
+    color: var(--txt-light-color);
+}
+
+.list td, .list th {
     padding: 0.5rem;
 }
 
-.list tr:nth-child(even) {
+.list table tr:nth-child(even) {
     background-color: var(--shadow-table);
+}
+
+.list table tr:hover {
+    background-color: var(--table-hover);
 }
 
 /* Buttons */
