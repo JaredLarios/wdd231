@@ -12,12 +12,6 @@ const currentTemp = document.querySelector('#current-temp');
 // const weatherIcon = document.querySelector('#weather-icon');
 // const weatherForecast = document.querySelector('#weather-forecast');
 const feedbackCard = document.querySelector('#feedback-cards');
-const joinButton = document.querySelector('#join');
-
-joinButton.onclick = function() {
-    location.href = "./join.html";
-}
-
 
 const sunTime = (data) => {
     let timezoneOffset = data.timezone;
