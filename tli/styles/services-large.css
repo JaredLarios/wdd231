@@ -1,0 +1,16 @@
+@media screen and (min-width: 770px) {
+    #currency {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+    
+    #currency h2 {
+        grid-column: 1/5;
+    }
+    
+    #currency .card {
+        padding: 1rem;
+        text-align: center;
+    }
+}
