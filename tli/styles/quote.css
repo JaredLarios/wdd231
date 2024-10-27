@@ -1,5 +1,9 @@
 /* --- Form ---*/
 
+form {
+    padding: 0.5rem;
+}
+
 form fieldset {
     border: 1px solid var(--txt-dark-color);
     border-radius: 10px;

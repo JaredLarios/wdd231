@@ -22,6 +22,6 @@ hamButton.addEventListener('click', () => {
 
 quoteButtons.forEach(e => {
     e.addEventListener('click', () => {
-        location.href = './join.html';
+        location.href = './quote.html';
     })
 });
